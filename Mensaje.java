@@ -19,8 +19,16 @@ public abstract class Mensaje {
         return idMensaje;
     }
 
+    public void setIdMensaje(String idMensaje) {
+        this.idMensaje = idMensaje;
+    }
+
     public Usuario getRemitente() {
         return remitente;
+    }
+
+    public void setRemitente(Usuario remitente) {
+        this.remitente = remitente;
     }
 
     public Date getFecha() {
@@ -29,6 +37,18 @@ public abstract class Mensaje {
 
     public EstadoLectura getEstado() {
         return estado;
+    }
+
+    public void setEstado(EstadoLectura estado) {
+        this.estado = estado;
+    }
+
+    public ContenidoMensaje getContenido() {
+        return contenido;
+    }
+
+    public void setContenido(ContenidoMensaje contenido) {
+        this.contenido = contenido;
     }
 
     public void avanzarEstado() {
