@@ -1,6 +1,6 @@
 import java.util.Date;
 
-public abstract class Mensaje {
+public class Mensaje {
     private String idMensaje;
     private Usuario remitente;
     private Date fecha;
