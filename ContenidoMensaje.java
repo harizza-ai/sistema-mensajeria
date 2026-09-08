@@ -1,3 +1,3 @@
 public interface ContenidoMensaje {
- public void MostrarMensaje();
+ String mostrarMensaje();
 }

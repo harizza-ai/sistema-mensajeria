@@ -24,9 +24,13 @@ public class Multimedia implements ContenidoMensaje{
         this.formato = formato;
     }
 
-    @Override
+    /*@Override
     public void MostrarMensaje() {
         System.out.printf("URL: %s\n", url + "Formato: " + formato);
+    }*/
 
+    @Override
+    public String mostrarMensaje() {
+        return "url: " + url + ", formato: " + formato;
     }
 }

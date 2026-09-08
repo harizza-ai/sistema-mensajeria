@@ -34,13 +34,7 @@ public class Encuesta implements ContenidoMensaje{
     }
 
     @Override
-    public void MostrarMensaje() {
-        System.out.println("Encuesta: " + pregunta);
-        int i = 0;
-        for (String opcion : opciones) {
-            System.out.printf(" " + (i + 1) + ". " + opcion + ("Votos: " + votos.get(i) + "\n")) ;
-            i++;
-        }
-
+    public String  mostrarMensaje() {
+        return "";
     }
 }

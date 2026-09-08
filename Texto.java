@@ -14,8 +14,13 @@ public class Texto implements ContenidoMensaje {
         this.texto = texto;
     }
 
-    @Override
+    /*@Override
     public void MostrarMensaje() {
         System.out.println("Texto: " + this.texto);
+    }*/
+
+    @Override
+    public String mostrarMensaje() {
+        return "Texto: " + texto;
     }
 }

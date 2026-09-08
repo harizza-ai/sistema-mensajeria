@@ -15,6 +15,14 @@ public class Mensaje {
         this.contenido = contenido;
     }
 
+    public Mensaje(String idMensaje, Usuario remitente, Date fecha, ContenidoMensaje contenido) {
+        this.idMensaje = idMensaje;
+        this.remitente = remitente;
+        this.fecha = fecha;
+        this.contenido = contenido;
+        this.estado = new Enviado();
+    }
+
     public String getIdMensaje() {
         return idMensaje;
     }
@@ -55,7 +63,7 @@ public class Mensaje {
         this.estado = this.estado.siguienteEstado();
     }
 
-    public void mostrarContenido() {
-        contenido.MostrarMensaje();
+    public String mostrarContenido() {
+        return contenido.mostrarMensaje();
     }
 }
