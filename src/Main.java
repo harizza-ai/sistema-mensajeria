@@ -1,3 +1,7 @@
+package src;
+
+import src.modelo.*;
+
 import java.util.Date;
 import java.util.List;
 

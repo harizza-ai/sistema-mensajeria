@@ -1,7 +1,11 @@
+package src.modelo;
+
+import src.modelo.interfaces.ContenidoMensaje;
+
 import java.util.ArrayList;
 import java.util.List;
 
-public class Encuesta implements ContenidoMensaje{
+public class Encuesta implements ContenidoMensaje {
     private String pregunta;
     private List<String> opciones;
     private  List<Integer> votos;

@@ -1,3 +1,8 @@
+package src.modelo;
+
+import src.modelo.interfaces.ContenidoMensaje;
+import src.modelo.interfaces.EstadoLectura;
+
 import java.util.Date;
 
 public class Mensaje {

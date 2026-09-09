@@ -1,4 +1,8 @@
-public class Multimedia implements ContenidoMensaje{
+package src.modelo;
+
+import src.modelo.interfaces.ContenidoMensaje;
+
+public class Multimedia implements ContenidoMensaje {
 
     private String url;
     private String formato;

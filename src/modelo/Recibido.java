@@ -1,3 +1,7 @@
+package src.modelo;
+
+import src.modelo.interfaces.EstadoLectura;
+
 public class Recibido implements EstadoLectura {
 
     @Override
@@ -7,6 +11,6 @@ public class Recibido implements EstadoLectura {
 
     @Override
     public String toString() {
-        return "Recibido";
+        return "src.modelo.Recibido";
     }
 }

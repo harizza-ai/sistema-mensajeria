@@ -1,4 +1,8 @@
-public class Leido implements EstadoLectura{
+package src.modelo;
+
+import src.modelo.interfaces.EstadoLectura;
+
+public class Leido implements EstadoLectura {
 
     @Override 
     public EstadoLectura siguienteEstado(){
@@ -8,6 +12,6 @@ public class Leido implements EstadoLectura{
 
     @Override
     public String toString() {
-        return "Leido";
+        return "src.modelo.Leido";
     }
 }

@@ -1,3 +1,7 @@
+package src.modelo;
+
+import src.modelo.interfaces.ContenidoMensaje;
+
 public class Texto implements ContenidoMensaje {
 
     private String texto;
@@ -16,11 +20,11 @@ public class Texto implements ContenidoMensaje {
 
     /*@Override
     public void MostrarMensaje() {
-        System.out.println("Texto: " + this.texto);
+        System.out.println("src.modelo.Texto: " + this.texto);
     }*/
 
     @Override
     public String mostrarMensaje() {
-        return "Texto: " + texto;
+        return "src.modelo.Texto: " + texto;
     }
 }
