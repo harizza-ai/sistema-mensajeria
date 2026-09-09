@@ -5,4 +5,9 @@ public class Leido implements EstadoLectura{
         return this;
         
     }
+
+    @Override
+    public String toString() {
+        return "Leido";
+    }
 }

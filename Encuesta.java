@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.List;
 
 public class Encuesta implements ContenidoMensaje{
@@ -17,13 +18,16 @@ public class Encuesta implements ContenidoMensaje{
         return votos;
     }
 
-    public Encuesta(String pregunta, List<String> opciones, List<Integer> votos) {
+    public Encuesta(String pregunta, List<String> opciones) {
         this.pregunta = pregunta;
         this.opciones = opciones;
-        this.votos = votos;
+        this.votos = new ArrayList<>();
+        for (int i = 0; i < this.opciones.size(); i++) {
+            this.votos.add(0);
+        }
     }
 
-    public void RegistrarVoto(int opcion){
+    public void registrarVoto(int opcion){
         if (opcion >= 0 && opcion < this.votos.size()){
             int votoActual = votos.get(opcion);
             votos.set(opcion, votoActual+1);
